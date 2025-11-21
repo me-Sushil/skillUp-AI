@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root{
+  --sb-track: rgba(15,23,42,0.32);     /* subtle dark track */
+  --sb-thumb-1: #06b6d4;               /* cyan */
+  --sb-thumb-2: #8b5cf6;               /* violet */
+  --sb-thumb-3: #f472b6;               /* fuchsia */
+  --sb-border: rgba(2,6,23,0.6);       /* subtle outer border */
+}
+
+/* Firefox fallback */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sb-thumb-2) var(--sb-track);
+  /* keep layout stable when scrollbar appears (newer browsers) */
+  scrollbar-gutter: stable;
+}
+
+/* WebKit browsers (Chrome, Edge, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--sb-track);
+  border-radius: 9999px;
+  margin: 6px 0; /* small vertical spacing inside the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  /* gradient thumb that matches your page's gradient */
+  background: linear-gradient(180deg,
+    var(--sb-thumb-1) 0%,
+    var(--sb-thumb-2) 55%,
+    var(--sb-thumb-3) 100%);
+  border-radius: 9999px;
+  box-shadow: inset 0 0 10px rgba(2,6,23,0.25);
+  border: 2px solid rgba(255,255,255,0.03);
+  min-height: 28px; /* keeps a usable thumb on short lists */
+  transition: filter .15s ease;
+}
+
+/* hover effect */
+.custom-scrollbar:hover::-webkit-scrollbar-thumb,
+.custom-scrollbar:active::-webkit-scrollbar-thumb {
+  filter: brightness(1.06);
+}
+
+/* Optional: corner styling (when both scrollbars present) */
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}

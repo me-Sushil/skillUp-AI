@@ -1,0 +1,3 @@
+
+##GET all notes
+get http://localhost:3001/api/quiz/691415ffa2406d0d901ec0af
