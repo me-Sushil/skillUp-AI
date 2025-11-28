@@ -122,7 +122,7 @@ npm run dev<br>
 ✔ Ensure IP access is allowed in MongoDB Atlas<br>
 
 
-❌ OpenAI API not responding<br>
+❌ GEMINI API not responding<br>
 ✔ Check your GEMINI_API_KEY<br>
 ✔ Ensure billing is active<br>
 
