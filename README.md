@@ -1,3 +1,6 @@
+This project was originally developed in the company GitHub repository:  
+👉 [TEJ-Fellowship/pbl – skillUp-AI](https://github.com/TEJ-Fellowship/pbl/tree/main/intern/skillUp-AI)
+
 📘 SkillUp-AI — AI-Powered Learning Assistant
 
 SkillUp-AI is an interactive learning platform that helps users master programming by chatting with an AI tutor, generating quizzes, and receiving personalized guidance based on their chosen programming language.
